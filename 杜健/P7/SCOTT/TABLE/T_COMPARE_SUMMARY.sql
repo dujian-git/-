@@ -1,0 +1,28 @@
+
+/****************è¡¨ç»æ****************/
+
+  CREATE TABLE "SCOTT"."T_COMPARE_SUMMARY" 
+   (	"CP_ID" VARCHAR2(32), 
+	"CP_ITEM" VARCHAR2(100), 
+	"LEFT_DB_MARK" VARCHAR2(100), 
+	"RIGHT_DB_MARK" VARCHAR2(100), 
+	"CRT_TM" DATE, 
+	"SM_ID" VARCHAR2(32) NOT NULL ENABLE, 
+	 CONSTRAINT "PK_COMPARE_SUMMARY_ID" PRIMARY KEY ("SM_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255 COMPUTE STATISTICS NOCOMPRESS LOGGING
+  STORAGE( INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645)
+  TABLESPACE "USERS"  ENABLE
+   ) SEGMENT CREATION DEFERRED 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  TABLESPACE "USERS" 
+
+
+/**************æ¬è¡¨æ³¨é**************/
+
+		æ æ³¨é
+
+
+/**************æ¬è¡¨ç´¢å¼**************/
+
+INDEX_NAME(ç´¢å¼åç§°) INDEX_TYPE(ç´¢å¼ç±»å) UNIQUENESS(å¯ä¸æ§çº¦æ)COLUMNS(ç´¢å¼åå«çå­æ®µ)
+PK_COMPARE_SUMMARY_ID        NORMAL                       UNIQUE                        SM_ID                         
